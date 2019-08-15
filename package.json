@@ -1,0 +1,13 @@
+{
+  "name": "aprendeblockchain",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/soyjavi/a-b",
+  "author": "soyjavi <hello@soyjavi.com>",
+  "license": "GPL v3",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.3.0",
+    "parcel": "^1.12.3"
+  }
+}
