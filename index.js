@@ -5,7 +5,6 @@ import dotenv from 'dotenv';
 import express from 'express';
 import http from 'http';
 
-import { mail } from './src/common';
 import api from './src/api';
 import site from './src/site';
 // import { error, request } from './src/middlewares';
@@ -34,7 +33,6 @@ app.use(site);
 
 const listener = server.listen(PORT, () => {
   console.log(`aprenderblockchain.soyjavi.com is ready on port ${listener.address().port}`);
-  mail('javi.jimenez.villar@gmail.com');
   // crons.start();
 });
 

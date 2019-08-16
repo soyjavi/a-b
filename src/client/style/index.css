@@ -1,0 +1,32 @@
+:root {
+  --bg-color: white;
+  --bg-opacity: rgba(255,255,255,0.85);
+  --color: #111;
+  --color-lighten: #555;
+  --color-accent: #FFD700;
+  --color-hover: blue;
+  --color-skeleton: #eee;
+
+  --font: 'Fira Sans', sans-serif;
+  --font-content: 'Cardo', serif;
+  --font-size-XL: 2.6rem;
+  --font-size-L: 2.4rem;
+  --font-size: 1.6rem;
+  --font-size-markdown: 1.4rem;
+  --font-size-S: 1.1rem;
+  --font-size-XS: 0.9rem;
+
+  --unit: 1rem;
+
+  --border-radius: 0.15rem;
+
+  --wrapper: 1220px;
+  --wrapper-post: 680px;
+  --mobile: 768px;
+  --tablet: 1024px;
+
+  --animation: 300ms ease-in-out;
+}
+
+@import './theme.css';
+@import './extend.css';
