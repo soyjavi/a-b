@@ -2,7 +2,6 @@ import { Router } from 'express';
 
 const router = Router();
 
-// Endpoints
 router.post('/subscribe', (req, res, next) => {
   res.json({ pago: 'bitcoin' });
 });

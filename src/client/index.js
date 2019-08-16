@@ -1,3 +1,6 @@
+// import on from './on';
+
+
 (() => {
   window.onload = () => {
     window.setTimeout(() => {
@@ -6,3 +9,8 @@
     console.log('onload');
   };
 })();
+
+
+window.aprendeblockchain = {
+  // on,
+};
