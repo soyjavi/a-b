@@ -27,9 +27,15 @@
     "eslint": "5.9.0",
     "eslint-config-airbnb": "latest",
     "eslint-plugin-import": "2.14.0",
-    "parcel-bundler": "1.12.3"
+    "parcel-bundler": "^1.12.3"
+  },
+  "engines": {
+    "node": "10.x"
   },
   "main": "index.js",
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
   "scripts": {
     "build": "parcel build src/client/index.js src/client/style/index.css",
     "watch": "parcel src/client/index.js src/client/style/index.css",

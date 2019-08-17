@@ -8,7 +8,7 @@ import C from './constants';
 const {
   DOMAIN, EMAIL, TITLE, DESCRIPTION, FAVICON,
 } = C;
-const folder = path.resolve('.', 'src/pages');
+const folder = path.resolve('.', 'src/templates');
 const bindingRegexp = new RegExp(/{{.*}}/, 'g');
 
 export default (filename = 'index', values = {}, forceCache = true) => {
