@@ -37,9 +37,7 @@
 }
 
 /* -- roles --- */
-[data-role=payment-bitcoin] section { min-height: 100vh; height: auto; }
-
-/*[data-role=payment-bitcoin] section > * { padding-top: 8rem !important; min-height: 100vh; }*/
+/*[data-role=payment-bitcoin] .intro .content { height: 100% !important; }*/
 
 [data-role=payment-bitcoin] .actions .arrow { transform: rotate(90deg); }
 
@@ -54,5 +52,15 @@
   .intro .content {
     display: flex;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .intro .content { height: 100% !important; }
+}
+
+@media screen and (min-width: 1152px) and (max-width: 1680px) {
+  .intro .content .plans .pro {
+    margin-top: 2rem;
   }
 }

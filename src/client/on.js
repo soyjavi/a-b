@@ -14,7 +14,9 @@ const queryString = (props = {}) => (
     .join('&') // eslint-disable-line
 );
 
-document.querySelector('#email').addEventListener('keyup', ({ target: { value } }) => {
+const email = document.querySelector('#email');
+
+if (email) email.addEventListener('keyup', ({ target: { value } }) => {
   const el = document.querySelector('button')
 
   if (IS_EMAIL.test(value)) el.removeAttribute('disabled');

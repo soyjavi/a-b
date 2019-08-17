@@ -14,6 +14,7 @@ router.get('/pago-bitcoin', (req, res, next) => {
     content: render('pago-bitcoin', {
       addressBTC: addresses[index],
       amountBTC: AMOUNT_BTC,
+      author: render('section-author'),
     }),
     // script: render('scripts/drift'),
   }));
@@ -24,6 +25,7 @@ router.get('/', (req, res, next) => {
     role: 'home',
     content: render('home', {
       amountBTC: AMOUNT_BTC,
+      author: render('section-author'),
     }),
     // script: render('scripts/drift'),
   }));
