@@ -2,7 +2,9 @@
   margin: calc(var(--unit) * 3) 0;
 }
 
-.fa-icon:before{ content:"?" }
+.icon.solid:before {
+  font-family: "Font Awesome 5 Pro";
+}
 
 .actions .arrow { height: 4rem; width: 4rem; }
 
