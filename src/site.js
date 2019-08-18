@@ -11,7 +11,7 @@ router.get('/pago-bitcoin', (req, res, next) => {
 
   res.send(render('base', {
     role: 'payment-bitcoin',
-    content: render('pago-bitcoin', {
+    content: render('payment-bitcoin', {
       addressBTC: addresses[index],
       amountBTC: AMOUNT_BTC,
       author: render('section-author'),

@@ -8,6 +8,12 @@
 
 .actions .arrow { height: 4rem; width: 4rem; }
 
+/* -- author -- */
+.author { align-items: center; display: flex; margin-bottom: 2rem; }
+  .author img { border-radius: 50%; width: 4rem; margin-right: 1rem; }
+  .author div { display: flex; flex-direction: column; }
+  .author small { font-size: 75%; }
+
 /* -- Prices plan -- */
 .plans { display: flex; flex-direction: column; }
 
@@ -36,23 +42,15 @@
   margin: 1.5rem 0;
 }
 
-/* -- roles --- */
-/*[data-role=payment-bitcoin] .intro .content { height: 100% !important; }*/
-
+/* -- pages -- */
 [data-role=payment-bitcoin] .actions .arrow { transform: rotate(90deg); }
 
+/* -- medias -- */
 @media screen and (min-width: 852px) and (max-width: 1152px), screen and (min-width: 1680px) {
   .plans { flex-direction: row; }
   .plan { display: flex; flex-direction: column; width: 50%; }
   .plan:first-child { margin-right: 1.5em; }
-}
-
-/**/
-@media screen and (min-width: 852px) and (max-width: 1152px), screen and (min-width: 1680px) {
-  .intro .content {
-    display: flex;
-    align-items: center;
-  }
+  .intro .content { display: flex; align-items: center; }
 }
 
 @media screen and (max-width: 1680px) {
@@ -60,7 +58,5 @@
 }
 
 @media screen and (min-width: 1152px) and (max-width: 1680px) {
-  .intro .content .plans .pro {
-    margin-top: 2rem;
-  }
+  .intro .content .plans .pro { margin-top: 2rem; }
 }
