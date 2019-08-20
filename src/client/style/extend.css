@@ -42,6 +42,46 @@
   margin: 1.5rem 0;
 }
 
+/* -- testimonials -- */
+.quote {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+/*.quote .box { margin: 0 2rem 4rem 2rem; }*/
+.quote .box { margin-bottom: 4rem; }
+
+.quote p {
+  text-decoration: cursive;
+}
+
+.quote strong {
+  font-size: 6rem;
+  max-height: 3rem;
+  line-height: 3rem;
+  /*line-height: 12rem;*/
+  overflow: hidden;
+  background: orange;
+}
+
+.quote img {
+  background: lightgrey;
+  border-radius: 2rem;
+  height: 4rem;
+  margin-top: 1rem;
+  width: 4rem;
+}
+
+.quote .box + img { margin-left: 2rem; }
+.quote img + .box { margin-left: 2rem; }
+
+.quote p { margin-bottom: 0.5rem; }
+.quote small { font-size: 0.9rem; }
+.quote h3 { margin: 0; }
+
 /* -- pages -- */
 [data-role=payment-bitcoin] .actions .arrow { transform: rotate(90deg); }
 
