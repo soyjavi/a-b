@@ -82,6 +82,11 @@
 .quote small { font-size: 0.9rem; }
 .quote h3 { margin: 0; }
 
+video {
+  width: 100%;
+  margin: 1rem 0;
+}
+
 /* -- pages -- */
 [data-role=payment-bitcoin] .actions .arrow { transform: rotate(90deg); }
 
