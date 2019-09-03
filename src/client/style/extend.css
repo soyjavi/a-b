@@ -1,3 +1,7 @@
+.avatar {
+
+}
+
 .example {
   margin: calc(var(--unit) * 3) 0;
 }
@@ -69,10 +73,12 @@
 
 .quote img {
   background: lightgrey;
-  border-radius: 2rem;
-  height: 4rem;
+  object-fit: cover;
+  border: solid .25rem lightgrey;
+  border-radius: 2.25rem;
+  height: 4.5rem;
   margin-top: 1rem;
-  width: 4rem;
+  width: 4.5rem;
 }
 
 .quote .box + img { margin-left: 2rem; }
