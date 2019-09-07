@@ -101,7 +101,7 @@
           <li>2.1 Setup</li>
           <li>2.2 Creando nuestra clase <code>Block()</code></li>
           <li>2.3 El bloque <i>Genesis</i></li>
-          <li>2.4 Minando un bloque</li>
+          <li>2.4 Minando bloque</li>
           <li>2.5 La función <i>hash</i> <code>SHA256</code></li>
           <li>2.6 Test: <code>Block()</code></li>
         </ul>
@@ -111,9 +111,9 @@
           <li>3.1 Creando nuestra clase <code>Blockchain()</code></li>
           <li>3.2 Test: <code>Blockchain()</code></li>
           <li>3.3 Validador de Blockchain</li>
-          <li>3.4 Test: <code>validator()</code></li>
+          <li>3.4 Test: <code>validate()</code></li>
           <li>3.5 Sustituyendo nuestra Blockchain</li>
-          <li>3.6 Test: <code>fork()</code></li>
+          <li>3.6 Test: <code>replace()</code></li>
         </ul>
       </div>
     </section>
@@ -126,18 +126,18 @@
       <div class="content">
         <h4>4. Creando nuestra App con Blockchain</h4>
         <ul>
-          <li>4.1 Setup</li>
-          <li>4.2 Obteniendo los bloques</li>
-          <li>4.3 Minando nuevos bloques</li>
+          <li>4.1 Setup servicio HTTP</li>
+          <li>4.2 endpoint <code>/blocks</code></li>
+          <li>4.3 endpoint <code>/mine</code></li>
         </ul>
 
         <h4>5. Creando nuestra red Blockchain</h4>
         <ul>
-          <li>5.1 Servidor P2P</li>
-          <li>5.2 Creando nuestro WebSocket</li>
+          <li>5.1 Red <i>Peer to Peer</i></li>
+          <li>5.2 Setup servicio P2P</li>
           <li>5.3 Conectando nodos a nuestra Blockchain</li>
-          <li>5.4 Manejando mensajes de los nodos</li>
-          <li>5.5 Sincronizando nuestra blockchain entre nodos</li>
+          <li>5.4 <i>Broadcasting</i> entre nodos</li>
+          <li>5.5 Sincronizando nuestra blockchain</li>
         </ul>
       </div>
     </section>
@@ -151,10 +151,10 @@
         <h4>6. Proof of Work</h4>
         <ul>
           <li>6.1 PoW y el ataque del 51%</li>
-          <li>6.2 PoW y el <i>Nonce</i></li>
-          <li>6.3 Test: <code>nonce()</code></li>
+          <li>6.2 PoW y <i>Nonce</i></li>
+          <li>6.3 Test: <code>nonce</code></li>
           <li>6.4 Dificultad de bloque dinámica</li>
-          <li>6.5 Test: <code>difficulty()</code></li>
+          <li>6.5 Test: <code>difficulty</code></li>
         </ul>
 
         <h4>7. Wallets y transacciones en blockchain</h4>
@@ -171,7 +171,15 @@
           <li>7.10 Actualización de transacciones</li>
           <li>7.11 Test: <code>updateTx()</code></li>
         </ul>
+    </section>
 
+    <section>
+      <header>
+        <h3>Bloque IV</h3>
+        <p>En este bloque descubrirás lo que significa el <i>minado</i> de una criptomoneda y sus implicaciones en cuanto a seguridad y disponibilidad.</p>
+      </header>
+
+      <div class="content">
         <h4>8. Recogiendo transacciones del <i>Pool</i></h4>
         <ul>
           <li>8.1 Transacción <i>Pool</i></li>
@@ -185,15 +193,7 @@
           <li>8.9 Manejando transacciones en la network P2P</li>
           <li>8.10 Endpoint: key público</li>
         </ul>
-    </section>
 
-    <section>
-      <header>
-        <h3>Bloque IV</h3>
-        <p>En este bloque descubrirás lo que significa el <i>minado</i> de una criptomoneda y sus implicaciones en cuanto a seguridad y disponibilidad.</p>
-      </header>
-
-      <div class="content">
         <h4>9. Minando transacciones</h4>
         <ul>
           <li>9.1 Mineros de transacciones</li>
