@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 import { Router } from 'express';
 import { render } from './common';
 
-const { ADDRESS_BTC, AMOUNT_BTC } = process.env;
+const { ADDRESS_BTC, AMOUNT_BTC, AMOUNT_FIAT } = process.env;
 const router = Router();
 
 router.get('/pago-bitcoin', (req, res, next) => {
@@ -25,6 +25,7 @@ router.get('/', (req, res, next) => {
     role: 'home',
     content: render('home', {
       amountBTC: AMOUNT_BTC,
+      amountFIAT: AMOUNT_FIAT,
       author: render('section-author'),
     }),
     // script: render('scripts/drift'),
