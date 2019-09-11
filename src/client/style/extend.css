@@ -2,6 +2,15 @@
 
 }
 
+.wip {
+  background-color: black;
+  color: white;
+  text-transform: lowercase;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  letter-spacing: 0;
+}
 .example {
   margin: calc(var(--unit) * 3) 0;
 }
