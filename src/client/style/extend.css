@@ -37,7 +37,17 @@
 
 .plan > * { display: block; }
 .plan > div:first-child { padding-bottom: 1em; border-bottom: solid 1px rgba(144, 144, 144, 0.25); }
+.plan .row { display: flex; align-items: center; }
 .plan h2 { margin-bottom: 0; }
+.plan h2 + strong {
+  background-color: var(--color-accent);
+  border-radius: var(--unit);
+  color: black !important;
+  display: inline-block;
+  font-size: var(--font-size-XS);
+  margin-left: calc(var(--unit) / 2);
+  padding: 0 calc(var(--unit) / 2);
+}
 .plan h3 { margin-bottom: 0.45rem; }
   .plan h2 > span { font-size: 0.75em; opacity: 0.75; }
 .plan small { font-size: 0.85em; display: block; line-height: 1.5; }

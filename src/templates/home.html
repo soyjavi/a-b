@@ -129,8 +129,8 @@
         <h4>4. Creando nuestra App con Blockchain</h4>
         <ul>
           <li>4.1 Setup servicio HTTP</li>
-          <li>4.2 endpoint <code>/blocks</code></li>
-          <li>4.3 endpoint <code>/mine</code></li>
+          <li>4.2 Endpoint <code>/blocks</code></li>
+          <li>4.3 Endpoint <code>/mine</code></li>
         </ul>
 
         <h4>5. Creando nuestra red Blockchain</h4>
@@ -187,18 +187,18 @@
       </header>
 
       <div class="content">
-        <h4>9. Recogiendo transacciones del <i>Pool</i> <span class="wip">work in progress</span></h4>
+        <h4>9. Creando <i>MemoryPool</i> <span class="wip">work in progress</span></h4>
         <ul>
-          <li>9.1 Transacción <i>Pool</i></li>
-          <li>9.2 Añadiendo transacción al <i>Pool</i></li>
-          <li>9.3 Test: <code>poolTx()</code></li>
-          <li>9.4 Creando transacciones con una Wallet</li>
-          <li>9.5 Test: <code>walletTx()</code></li>
-          <li>9.6 Obteniendo transacciones</li>
-          <li>9.7 Creando transacciones</li>
-          <li>9.8 Añadiendo transacción <i>Pool</i> a la network P2P</li>
-          <li>9.9 Manejando transacciones en la network P2P</li>
-          <li>9.10 Endpoint: key público</li>
+          <li>9.1 Introduccion a <i>MemoryPool</i></li>
+          <li>9.2 Añadiendo una transacción a <i>MemoryPool</i></li>
+          <li>9.3 Test: <code>MemoryPool</code></li>
+          <li>9.4 Creando transacciones con <code>Wallet</code></li>
+          <li>9.5 Test: <code>createTransaction()</code></li>
+          <li>9.6 Endpoint <code>/transactions</code></li>
+          <li>9.7 Endpoint <code>/transaction</code></li>
+          <li>9.8 Broadcast de transacciones a la red P2P</li>
+          <li>9.9 Manejando transacciones en la red P2P</li>
+          <li>9.10 Endpoint <code>/publicKey</code></li>
         </ul>
 
         <h4>10. Minando transacciones <span class="wip">work in progress</span></h4>
@@ -231,8 +231,7 @@
         <ul>
           <li>10.1 Retrospectiva</li>
           <li>10.2 Conoce: IPFS</li>
-          <li>10.3 Conoce: Proof-of-Stake</li>
-          <li>10.4 Siguientes pasos en tu proyecto</li>
+          <li>10.3 Conoce: <i>Proof-of-Stake</i></li>
         </ul>
       </div>
     </section>
@@ -264,7 +263,7 @@
 
     <div class="plan box pro">
       <div>
-        <h2>CRIPTO</h2>
+        <div class="row"><h2>CRIPTO</h2><strong>{{reservationsBTC}} reservas</strong></div>
         <small>Si realizas el pago con Bitcoin, ademas de aprovecharte de más de un 20% de descuento tendras acceso a extras exclusivos.</small>
       </div>
       <ul>
@@ -274,7 +273,7 @@
         <li>✔ <strong>GRATIS!</strong> Acceso a comunidad privada</li>
       </ul>
       <h2>{{amountBTC}}<span>BTC</span></h2>
-      <a class="button primary" class="button" href="/pago-bitcoin">Comprar ahora</a>
+      <a class="button primary" class="button" href="/pago-bitcoin">Reservar ahora</a>
     </div>
   </div>
 </section>

@@ -3,7 +3,7 @@
   --bg-opacity: rgba(255,255,255,0.85);
   --color: #111;
   --color-lighten: #555;
-  --color-accent: #FFD700;
+  --color-accent: #49fcd4;
   --color-hover: blue;
   --color-skeleton: #eee;
 
@@ -24,7 +24,6 @@
   --wrapper-post: 680px;
   --mobile: 768px;
   --tablet: 1024px;
-
   --animation: 300ms ease-in-out;
 }
 
