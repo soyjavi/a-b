@@ -9,7 +9,7 @@
         Un curso creado por <a href="http://soyjavi.com">@soyjavi</a>
       </p>
       <ul class="actions">
-        <li><a href="/" class="arrow"><span class="label">Next</span></a></li>
+        <li><a href="/?ref={{ref}}" class="arrow"><span class="label">Next</span></a></li>
       </ul>
     </div>
   </header>
@@ -43,7 +43,7 @@
         <div class="form">
           <input type="email" name="email" id="email" placeholder="Email" />
           <input type="hidden" name="address" id="address" value={{addressBTC}} />
-
+          <input type="hidden" name="ref" id="ref" value={{ref}} />
           <button class="button primary" disabled onclick="aprendeblockchain.on.paymentBTC(this)">He realizado la reserva</button>
         </div>
       </div>

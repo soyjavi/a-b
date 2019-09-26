@@ -25,7 +25,7 @@ if (email) email.addEventListener('keyup', ({ target: { value } }) => {
 
 export default {
   async paymentBTC(el) {
-    const [{ value: email }, { value: address }] = el.parentNode.children;
+    const [{ value: email }, { value: address }, { value: ref }] = el.parentNode.children;
 
     if (!IS_EMAIL.test(email)) return;
 
@@ -35,7 +35,7 @@ export default {
     const response = await fetch('/payment/bitcoin', {
       headers: { ...HEADERS },
       method: 'POST',
-      body: queryString({ email, address }),
+      body: queryString({ email, address, ref }),
     }).catch(e => console.error(e));
 
     if (response) {
