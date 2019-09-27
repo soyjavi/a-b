@@ -24,9 +24,10 @@
 
 /* -- author -- */
 .author { align-items: center; display: flex; margin-bottom: 2rem; }
-  .author img { border-radius: 50%; width: 4rem; margin-right: 1rem; }
+  .author .avatar { border-radius: 50%; height: 4rem; margin-right: 1rem; }
   .author div { display: flex; flex-direction: column; }
   .author small { font-size: 75%; }
+  .author .signature { height: 4.8rem; }
 
 /* -- Prices plan -- */
 .plans { display: flex; flex-direction: column; }
