@@ -3,7 +3,7 @@ import { Router } from 'express';
 import { render } from './common';
 
 const {
-  ADDRESS_BTC, AMOUNT_BTC, AMOUNT_FIAT, RESERVATIONS_BTC,
+  ADDRESS_BTC, AMOUNT_BTC, AMOUNT_FIAT,  AMOUNT_FIAT_DISCOUNT, RESERVATIONS_BTC,
 } = process.env;
 const router = Router();
 
@@ -33,6 +33,7 @@ router.get('/', (req, res, next) => {
     content: render('home', {
       amountBTC: AMOUNT_BTC,
       amountFIAT: AMOUNT_FIAT,
+      amountFIATDiscount: AMOUNT_FIAT_DISCOUNT,
       author: render('section-author'),
       ref,
       reservationsBTC: RESERVATIONS_BTC,
