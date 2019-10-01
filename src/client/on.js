@@ -30,7 +30,7 @@ export default {
     if (!IS_EMAIL.test(email)) return;
 
     el.setAttribute('disabled', '');
-    el.innerHTML = 'Enviando...';
+    el.innerHTML = 'Reservando...';
 
     const response = await fetch('/payment/bitcoin', {
       headers: { ...HEADERS },
@@ -38,13 +38,19 @@ export default {
       body: queryString({ email, address, ref }),
     }).catch(e => console.error(e));
 
+    let success = false;
+
     if (response) {
       const json = await response.json();
-      console.log('on.paymentBTC', json);
+      success = json.success;
     }
 
-
-    el.innerHTML = 'He realizado el pago';
+    if (success) {
+      el.innerHTML = 'Reserva confirmada!';
+      el.classList.remove('primary');
+    } else {
+      el.innerHTML = 'He realizado el pago';
+    }
     el.removeAttribute('disabled', '');
   },
 };

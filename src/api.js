@@ -15,13 +15,17 @@ router.post('/payment/bitcoin', async (req, res, next) => {
     text: render('mail-payment-bitcoin', { address, amount: AMOUNT_BTC })
   }).catch(() => error = true);
 
-
-  const adminMail = await mail({
+  await mail({
     subject: 'Nuevo pago - AprendeBlockchain',
     text: render('mail-payment-bitcoin-admin', { address, email, ref, amount: AMOUNT_BTC })
   }).catch(() => error = true);
 
-  res.json({ success: !error });
+  res.json({
+    success: !error,
+    email,
+    address,
+    ref,
+  });
 });
 
 export default router;
