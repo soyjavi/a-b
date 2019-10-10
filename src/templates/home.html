@@ -235,43 +235,53 @@
 {{author}}
 
 <!-- about -->
+
 <section id="planes">
   <header>
-    <h2>¿Cuanto te va a costar?</h2>
+    <h2>¿Que incluye y cuanto te va a costar?</h2>
   </header>
-  <div class="content plans">
-    <div class="plan box">
-      <div>
-        <h2>UDEMY</h2>
-        <small>No encontraras un curso con todo este contenido y a un precio tan competitivo. Reservalo ahora y conviértete en un Blockchain Developer.</small>
+  <div class="content">
+    <div class="plans">
+      <div class="plan box pro">
+        <div>
+          <h2>CONTENIDO</h2>
+          <small>
+            No encontraras un curso con todo este contenido y a un precio tan competitivo. Reservalo ahora y conviértete en un Blockchain Developer.
+          </small>
+          <small></small>
+        </div>
+        <ul>
+          <li>✔ Más de <strong>60 videos</strong></li>
+          <li>✔ Ejercicios 100% documentados</li>
+          <li>✔ 1h soporte <strong><i>videocall</i></strong></li>
+          <li>✔ Acceso a comunidad privada</li>
+        </ul>
+        <h4 class="lineThrough">{{amountFIAT}}€</h4>
+        <h2>{{amountBTC}}<span>BTC</span></h2>
       </div>
-      <ul>
-        <li>✔ Más de 60 videos</li>
-        <li>✔ Ejercicios 100% documentados</li>
-      </ul>
 
-      <h2 class="lineThrough">{{amountFIAT}}<span>€</span></h2>
-      <div class="row">
-        <h2 class="">{{amountFIATDiscount}}<span>€</span></h2>
-        <strong>oferta lanzamiento</strong>
-      </div>
-      <a class="button" href="https://www.udemy.com/course/aprende-blockchain/?couponCode=OFERTA-LANZAMIENTO">Comprar ahora</a>
-    </div>
+      <div class="plan box">
+        <div>
+          <h3>INSTRUCCIONES DE PAGO</h3>
+          <small>Simplemente envia <strong>{{amountBTC}}BTC</strong> a la siguiente <i>address</i> y un email para que te enviemos el temario una vez el pago este confirmado.</small>
+        </div>
 
-    <div class="plan box pro">
-      <div>
-        <h2>CRIPTO</h2>
-        <small>Al realizar el pago con Bitcoin, ademas de aprovecharte de más de un 20% de descuento tendrás acceso a extras exclusivos.</small>
+        <div class="addressbtc">
+          <img class="qr" src="https://chart.googleapis.com/chart?cht=qr&chs=256x256&chld=H|0&chl=bitcoin:{{addressBTC}}?amount={{amountBTC}}" />
+          <small>{{addressBTC}}</small>
+        </div>
+
+        <div class="form">
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <input type="hidden" name="address" id="address" value={{addressBTC}} />
+          <input type="hidden" name="ref" id="ref" value={{ref}} />
+          <button class="button primary" disabled onclick="aprendeblockchain.on.paymentBTC(this)">He realizado el pago</button>
+        </div>
       </div>
-      <ul>
-        <li>✔ Más de 60 videos</li>
-        <li>✔ Ejercicios 100% documentados</li>
-        <li>✔ <strong>GRATIS!</strong> 1h soporte <i>videocall</i></li>
-        <li>✔ <strong>GRATIS!</strong> Acceso a comunidad privada</li>
-      </ul>
-      <h2>{{amountBTC}}<span>BTC</span></h2>
-      <a class="button primary" class="button" href="/pago-bitcoin?ref={{ref}}">Comprar ahora</a>
     </div>
+    <small>
+      Si no quieres utilizar Bitcoin como método de pago, puedes adquirir el curso en <a href="https://www.udemy.com/course/aprende-blockchain/?couponCode={{udemyCoupon}}">Udemy por solo {{amountFIAT}}€</a>.
+    </small>
   </div>
 </section>
 
